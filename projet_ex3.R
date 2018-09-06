@@ -14,7 +14,7 @@ S2 <- matrix(c(0, 2, -2, -8), 2, 2, byrow=TRUE)
 S2_dp <- eigen(S2)
 S2 == round(S2_dp$vectors %*% diag(S2_dp$values, 2, 2) %*% solve(S2_dp$vectors), 0)  # La matrice est diagonalisable car égale (S2 = PDP^−1)
 
-# 2.b Résoudre ce système (S2) localement à (0, 0) avec comme condition initiale x(0) = 1, y(0) = 0
+# 2.b Résoudre ce système (S2) localement à (0, 0) avec comme condition initiale x(0) = 1, y(0) = 1
 res_S2 <- matrix(c(1, 1), 2, 1, TRUE)
 S2_solutions <- matrix(0, 2, 10)  # Pexp(Dt)P^−1X0
 # Calcul de la solution spécifique pour S(t)
