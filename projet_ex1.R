@@ -1,5 +1,5 @@
 # Projet de 5IBD en Math avec R
-# Groupe 4 (Florian PAPIn, Ghiles CHERFAOUI, Thomas DUDOUX)
+# Groupe 4 (Florian PAPIN, Ghiles CHERFAOUI, Thomas DUDOUX)
 
 
 # Added Matrix package
@@ -43,4 +43,4 @@ for (k in 1:1000) {
   xk8 <- (1 / Uk8) * A8xk
 }
 print(Uk8)
-round(Uk8, 4) == round(sort(eigen(A8)$values, decreasing = TRUE)[1], 4) # Approximation OK
+round(Uk8, 4) == round(sort(eigen(A8)$values, decreasing = TRUE)[1], 4)  # Approximation OK

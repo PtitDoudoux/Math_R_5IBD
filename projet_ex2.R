@@ -1,5 +1,5 @@
 # Projet de 5IBD en Math avec R
-# Groupe 4 (Florian PAPIn, Ghiles CHERFAOUI, Thomas DUDOUX)
+# Groupe 4 (Florian PAPIN, Ghiles CHERFAOUI, Thomas DUDOUX)
 
 
 # Added Matrix package
@@ -20,7 +20,7 @@ work_model <- function (employed, non_employed, epochs) {
 # 1. Taux de chomage à long terme (1000 ans) et une forte pop 
 work_pop = work_model(2000, 1600, 1000)
 print("Taux de chomage : ")
-print(((work_pop[2] / sum(work_pop)) * 100 ))
+print(((work_pop[2] / sum(work_pop)) * 100))
 
 # 2. Pour x 0 = (20, 16) , tracer x k , pour les 15 premières années.
 work_pop = work_model(20, 16, 15)
